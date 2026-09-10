@@ -3,7 +3,7 @@
 ## Research Topics & Decisions
 
 ### 1. Mobile Navigation Close Control & Theme Toggle
-- **Decision**: Update `MobileMenu.tsx` to include an explicit, keyboard-accessible close button (using `X` icon from Lucide React) and include the `ThemeToggle` component within the mobile drawer/header area so it is fully accessible on mobile viewports. Connect `aria-controls` and `aria-expanded` properly in `Header.tsx`.
+- **Decision**: Update `MobileMenu.tsx` to include an explicit, keyboard-accessible close button (`X` icon with `aria-label="Close menu"`) and include the `ThemeToggle` component within the mobile drawer header area so it is fully accessible on mobile viewports. Connect `aria-controls` and `aria-expanded` properly in `Header.tsx`.
 - **Rationale**: Solves mobile usability gaps without altering desktop navigation or introducing duplicate state.
 
 ### 2. Achievement & Project Data Corrections

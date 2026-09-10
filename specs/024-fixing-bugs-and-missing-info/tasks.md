@@ -53,8 +53,8 @@
 ### Implementation for User Story 2
 
 - [X] T006 [US2] Update DeepX Hackathon achievement year to 2026 in src/data/achievementsData.ts
-- [X] T007 [US2] Audit and remove exaggerated wording across src/data/aboutData.ts, src/data/heroData.ts, and section components
-- [X] T008 [US2] Verify Cashier App and project descriptions are factual and privacy-safe in src/data/featuredProjectsData.ts
+- [X] T007 [US2] Audit and remove exaggerated wording across src/data/aboutData.ts, src/data/heroData.ts, src/data/focusData.ts, and section components
+- [X] T008 [US2] Verify Cashier App and project descriptions are factual and privacy-safe in src/data/featuredProjectsData.ts and src/data/portfolioData.ts (Technologies: Electron, React, Tailwind CSS, Vite, SQLite)
 
 **Checkpoint**: User Story 2 should be fully functional and testable independently
 

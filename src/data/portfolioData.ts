@@ -4,10 +4,10 @@ export const projectsData: Project[] = [
   {
     id: 'cashier-app',
     title: 'Cashier POS Application',
-    description: 'A robust Point of Sale and cash management system built for retail operations.',
+    description: 'A practical Point of Sale and cash management desktop application built for retail operations.',
     problem: 'Local retail businesses needed a reliable, fast checkout and inventory tracking system.',
     technicalHighlights: ['Optimized state management', 'Receipt generation', 'Local data persistence'],
-    technologies: ['React', 'Node.js', 'Express', 'Tailwind CSS'],
+    technologies: ['Electron', 'React', 'Tailwind CSS', 'Vite', 'SQLite'],
     projectType: 'featured',
     status: 'commercial',
     isPrivate: true

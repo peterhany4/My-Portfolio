@@ -15,14 +15,14 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     id: 'cashier-app',
     title: 'Cashier POS Application',
-    description: 'A practical Point of Sale and cash management system built for retail operations with local data persistence and receipt generation.',
+    description: 'A practical Point of Sale and cash management desktop application built with Electron and React for retail operations with local database persistence.',
     problem: 'Local retail businesses needed a reliable, fast checkout and inventory tracking system without cloud dependency.',
     technicalHighlights: [
       'Optimized local state management for quick checkout calculations',
       'Structured modular architecture separating business logic from UI',
-      'Clean receipt formatting and local persistent storage'
+      'Clean receipt formatting and local SQLite data persistence'
     ],
-    technologies: ['React', 'Node.js', 'Express', 'Tailwind CSS'],
+    technologies: ['Electron', 'React', 'Tailwind CSS', 'Vite', 'SQLite'],
     status: 'Commercial',
     isPrivate: true
   },
