@@ -1,26 +1,17 @@
-import { Terminal, Code, Sparkles, ExternalLink } from 'lucide-react';
+import { Sparkles, ExternalLink } from 'lucide-react';
 import { projectsData, skillsData } from './data/portfolioData';
 import { ThemeProvider } from './hooks/useTheme';
-import { ThemeToggle } from './components/ThemeToggle';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 function PortfolioContent() {
   return (
-    <div className="min-h-screen flex flex-col justify-between p-6 md:p-12 lg:p-24 max-w-5xl mx-auto">
-      <header className="flex justify-between items-center mb-16">
-        <div className="flex items-center gap-2">
-          <Terminal className="w-6 h-6 text-accent" />
-          <span className="font-bold text-lg tracking-tight">Peter Hany</span>
-        </div>
-        <div className="flex items-center gap-4">
-          <span className="text-sm text-secondary hidden sm:inline">
-            Design Foundation v1.1.0
-          </span>
-          <ThemeToggle />
-        </div>
-      </header>
+    <div className="min-h-screen flex flex-col justify-between">
+      <Header />
 
-      <main className="space-y-12 my-auto">
-        <div className="space-y-6">
+      <main className="flex-grow max-w-5xl mx-auto px-6 w-full space-y-24 py-12">
+        {/* Hero Section */}
+        <section id="hero" className="space-y-6 pt-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface text-accent text-xs font-medium border border-borderColor">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Computer Science Student & Software Developer</span>
@@ -59,41 +50,92 @@ function PortfolioContent() {
               <span>LinkedIn</span>
             </a>
           </div>
-        </div>
+        </section>
 
-        {/* Data preview section proving content separation & design tokens */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8 border-t border-borderColor">
-          <div className="p-6 rounded-xl border border-borderColor bg-surface transition-transform hover:-translate-y-0.5 duration-200">
-            <h3 className="font-semibold text-base mb-3">Featured Projects ({projectsData.length})</h3>
-            <ul className="space-y-2 text-sm text-secondary">
-              {projectsData.map(p => (
-                <li key={p.id} className="flex items-center justify-between">
-                  <span>{p.title}</span>
-                  <span className="text-xs px-2 py-0.5 rounded bg-background border border-borderColor font-medium text-accent">{p.status}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* About Section */}
+        <section id="about" className="space-y-4">
+          <h2 className="text-2xl font-bold tracking-tight">About</h2>
+          <p className="text-secondary leading-relaxed">
+            Computer Science student and software developer passionate about building reliable full-stack applications and exploring new paradigms in software engineering.
+          </p>
+        </section>
 
-          <div className="p-6 rounded-xl border border-borderColor bg-surface transition-transform hover:-translate-y-0.5 duration-200">
-            <h3 className="font-semibold text-base mb-3">Skill Categories ({skillsData.length})</h3>
-            <div className="flex flex-wrap gap-2">
-              {skillsData.map(cat => (
-                <span key={cat.category} className="text-xs px-2.5 py-1 rounded-md border border-borderColor bg-background font-medium">
-                  {cat.category} ({cat.skills.length})
-                </span>
-              ))}
+        {/* Current Focus Section */}
+        <section id="focus" className="space-y-4">
+          <h2 className="text-2xl font-bold tracking-tight">Current Focus</h2>
+          <p className="text-secondary leading-relaxed">
+            Exploring advanced backend architecture, full-stack integration patterns, and clean code principles.
+          </p>
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="space-y-6">
+          <h2 className="text-2xl font-bold tracking-tight">Skills & Capabilities</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-6 rounded-xl border border-borderColor bg-surface">
+              <h3 className="font-semibold text-base mb-3">Skill Categories ({skillsData.length})</h3>
+              <div className="flex flex-wrap gap-2">
+                {skillsData.map(cat => (
+                  <span key={cat.category} className="text-xs px-2.5 py-1 rounded-md border border-borderColor bg-background font-medium">
+                    {cat.category} ({cat.skills.length})
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Featured Projects Section */}
+        <section id="projects" className="space-y-6">
+          <h2 className="text-2xl font-bold tracking-tight">Featured Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {projectsData.map(p => (
+              <div key={p.id} className="p-6 rounded-xl border border-borderColor bg-surface transition-transform hover:-translate-y-0.5 duration-200 space-y-3">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-semibold text-base">{p.title}</h3>
+                  <span className="text-xs px-2 py-0.5 rounded bg-background border border-borderColor font-medium text-accent">{p.status}</span>
+                </div>
+                <p className="text-sm text-secondary">{p.description}</p>
+                <div className="flex flex-wrap gap-1 pt-2">
+                  {p.technologies.map(tech => (
+                    <span key={tech} className="text-xs px-2 py-0.5 rounded bg-background border border-borderColor text-secondary">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Education Section */}
+        <section id="education" className="space-y-4">
+          <h2 className="text-2xl font-bold tracking-tight">Education</h2>
+          <div className="p-6 rounded-xl border border-borderColor bg-surface space-y-2">
+            <h3 className="font-semibold text-base">Bachelor of Computer Science</h3>
+            <p className="text-sm text-secondary">University Studies & Academic Progression</p>
+          </div>
+        </section>
+
+        {/* Achievements Section */}
+        <section id="achievements" className="space-y-4">
+          <h2 className="text-2xl font-bold tracking-tight">Achievements & Recognition</h2>
+          <div className="p-6 rounded-xl border border-borderColor bg-surface space-y-2">
+            <h3 className="font-semibold text-base">DeepX Hackathon & Professional Training</h3>
+            <p className="text-sm text-secondary">Demonstrated engineering excellence and active problem-solving capabilities.</p>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="space-y-4">
+          <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
+          <p className="text-secondary">
+            Reach out via <a href="mailto:peterhany@example.com" className="text-accent underline font-medium">email</a> or connect on GitHub and LinkedIn.
+          </p>
+        </section>
       </main>
 
-      <footer className="mt-16 pt-8 border-t border-borderColor text-xs text-secondary flex flex-col sm:flex-row justify-between gap-4">
-        <p>© {new Date().getFullYear()} Peter Hany. All rights reserved.</p>
-        <p className="flex items-center gap-1.5">
-          <Code className="w-3.5 h-3.5" /> Built with Spec-Driven Development
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
