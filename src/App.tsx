@@ -1,4 +1,3 @@
-import { projectsData } from './data/portfolioData';
 import { ThemeProvider } from './hooks/useTheme';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -6,6 +5,7 @@ import { Hero } from './sections/Hero';
 import { About } from './sections/About';
 import { CurrentFocus } from './sections/CurrentFocus';
 import { Skills } from './sections/Skills';
+import { FeaturedProjects } from './sections/FeaturedProjects';
 
 function PortfolioContent() {
   return (
@@ -17,29 +17,7 @@ function PortfolioContent() {
         <About />
         <CurrentFocus />
         <Skills />
-
-        {/* Featured Projects Section */}
-        <section id="projects" className="space-y-6">
-          <h2 className="text-2xl font-bold tracking-tight">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projectsData.map(p => (
-              <div key={p.id} className="p-6 rounded-xl border border-borderColor bg-surface transition-transform hover:-translate-y-0.5 duration-200 space-y-3">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-semibold text-base">{p.title}</h3>
-                  <span className="text-xs px-2 py-0.5 rounded bg-background border border-borderColor font-medium text-accent">{p.status}</span>
-                </div>
-                <p className="text-sm text-secondary">{p.description}</p>
-                <div className="flex flex-wrap gap-1 pt-2">
-                  {p.technologies.map(tech => (
-                    <span key={tech} className="text-xs px-2 py-0.5 rounded bg-background border border-borderColor text-secondary">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FeaturedProjects />
 
         {/* Education Section */}
         <section id="education" className="space-y-4">
