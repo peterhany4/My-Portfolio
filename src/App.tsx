@@ -7,6 +7,7 @@ import { CurrentFocus } from './sections/CurrentFocus';
 import { Skills } from './sections/Skills';
 import { FeaturedProjects } from './sections/FeaturedProjects';
 import { AdditionalProjects } from './sections/AdditionalProjects';
+import { Education } from './sections/Education';
 
 function PortfolioContent() {
   return (
@@ -20,15 +21,7 @@ function PortfolioContent() {
         <Skills />
         <FeaturedProjects />
         <AdditionalProjects />
-
-        {/* Education Section */}
-        <section id="education" className="space-y-4">
-          <h2 className="text-2xl font-bold tracking-tight">Education</h2>
-          <div className="p-6 rounded-xl border border-borderColor bg-surface space-y-2">
-            <h3 className="font-semibold text-base">Bachelor of Computer Science</h3>
-            <p className="text-sm text-secondary">University Studies & Academic Progression</p>
-          </div>
-        </section>
+        <Education />
 
         {/* Achievements Section */}
         <section id="achievements" className="space-y-4">
