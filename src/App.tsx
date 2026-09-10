@@ -6,6 +6,7 @@ import { About } from './sections/About';
 import { CurrentFocus } from './sections/CurrentFocus';
 import { Skills } from './sections/Skills';
 import { FeaturedProjects } from './sections/FeaturedProjects';
+import { AdditionalProjects } from './sections/AdditionalProjects';
 
 function PortfolioContent() {
   return (
@@ -18,6 +19,7 @@ function PortfolioContent() {
         <CurrentFocus />
         <Skills />
         <FeaturedProjects />
+        <AdditionalProjects />
 
         {/* Education Section */}
         <section id="education" className="space-y-4">
