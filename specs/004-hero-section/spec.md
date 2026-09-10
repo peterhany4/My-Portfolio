@@ -4,6 +4,11 @@
 
 Create the first impression and communicate identity immediately upon landing on the portfolio. The hero section presents Peter Hany as a Computer Science Student & Software Developer, communicates his core growth mindset ("Continuously building, learning, and exploring new areas of software development"), provides concise supporting description, and offers clear primary and secondary actions (View projects, GitHub, LinkedIn, CV, Contact).
 
+## Clarifications
+
+### Session 2026-09-10
+- Q: Are there any critical ambiguities regarding hero layout or actions? → A: None. Requirements fully align with the project Constitution and Design Foundation tokens.
+
 ## User Scenarios & Testing
 
 ### Scenario 1: Immediate Identity and Message Discovery
