@@ -9,6 +9,6 @@ export interface EducationItem {
 export const educationData: EducationItem = {
   degree: "Bachelor of Science in Computer Science",
   institution: "University",
-  studyPeriod: "2022 — Present",
-  expectedGraduation: "Expected 2026"
+  studyPeriod: "2024 — Present",
+  expectedGraduation: "Expected 2028"
 };
