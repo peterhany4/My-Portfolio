@@ -3,6 +3,7 @@ import { ThemeProvider } from './hooks/useTheme';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Hero } from './sections/Hero';
+import { About } from './sections/About';
 
 function PortfolioContent() {
   return (
@@ -11,14 +12,7 @@ function PortfolioContent() {
 
       <main className="flex-grow max-w-5xl mx-auto px-6 w-full space-y-24 py-12">
         <Hero />
-
-        {/* About Section */}
-        <section id="about" className="space-y-4">
-          <h2 className="text-2xl font-bold tracking-tight">About</h2>
-          <p className="text-secondary leading-relaxed">
-            Computer Science student and software developer passionate about building reliable full-stack applications and exploring new paradigms in software engineering.
-          </p>
-        </section>
+        <About />
 
         {/* Current Focus Section */}
         <section id="focus" className="space-y-4">
