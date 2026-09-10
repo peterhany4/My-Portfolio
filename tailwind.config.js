@@ -6,7 +6,20 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        primary: 'var(--color-text-primary)',
+        secondary: 'var(--color-text-secondary)',
+        borderColor: 'var(--color-border)',
+        accent: 'var(--color-accent)',
+      },
+      borderRadius: {
+        'lg': '0.5rem',
+        'xl': '0.75rem',
+      },
+    },
   },
   plugins: [],
 }
