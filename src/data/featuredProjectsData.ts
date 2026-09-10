@@ -38,7 +38,7 @@ export const featuredProjectsData: FeaturedProject[] = [
     ],
     technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
     status: 'Completed',
-    repositoryUrl: 'https://github.com/peterhany4'
+    repositoryUrl: 'https://github.com/peterhany4/Campus-Lost-Found-Items'
   },
   {
     id: 'deepx-hackathon',
@@ -51,6 +51,6 @@ export const featuredProjectsData: FeaturedProject[] = [
     ],
     technologies: ['Python', 'Scikit-learn', 'Pandas'],
     status: 'Hackathon',
-    repositoryUrl: 'https://github.com/peterhany4'
+    repositoryUrl: 'https://github.com/peterhany4/DeepX-Hackathon'
   }
 ];
