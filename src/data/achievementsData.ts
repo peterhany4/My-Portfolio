@@ -12,7 +12,7 @@ export const achievementsData: AchievementItem[] = [
     id: 'deepx',
     title: 'DeepX Hackathon Participant',
     organization: 'DeepX',
-    date: '2025',
+    date: '2026',
     description: 'Developed an Arabic sentiment analysis machine learning model under competitive hackathon time constraints.',
     category: 'Competition'
   },
@@ -21,7 +21,7 @@ export const achievementsData: AchievementItem[] = [
     title: 'DEPI Recognition & Training',
     organization: 'Digital Egypt Pioneers Initiative',
     date: '2024 — 2025',
-    description: 'Completed rigorous advanced technical training track with distinction.',
+    description: 'Completed rigorous technical training track with distinction.',
     category: 'Training'
   },
   {
@@ -29,7 +29,7 @@ export const achievementsData: AchievementItem[] = [
     title: '300+ Hours Frontend Training',
     organization: 'Intensive Technical Program',
     date: '2024',
-    description: 'Mastered modern web development architectures, React ecosystem, and responsive UI engineering.',
+    description: 'Studied modern web development practices, React ecosystem, and responsive UI engineering.',
     category: 'Training'
   }
 ];

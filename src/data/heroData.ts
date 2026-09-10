@@ -7,7 +7,7 @@ export interface HeroAction {
 export const heroData = {
   identityBadge: "Computer Science Student & Software Developer",
   headline: "Continuously building, learning, and exploring.",
-  description: "Welcome to my personal portfolio. I build robust full-stack applications and explore new areas of software engineering with a passion for continuous learning.",
+  description: "Welcome to my personal portfolio. I build functional full-stack applications and explore new areas of software engineering with a passion for continuous learning.",
   actions: [
     { label: "View Projects", href: "#projects", isPrimary: true },
     { label: "GitHub", href: "https://github.com/peterhany4" },

@@ -15,12 +15,12 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     id: 'cashier-app',
     title: 'Cashier POS Application',
-    description: 'A robust Point of Sale and cash management system built for retail operations with local data persistence and receipt generation.',
+    description: 'A practical Point of Sale and cash management system built for retail operations with local data persistence and receipt generation.',
     problem: 'Local retail businesses needed a reliable, fast checkout and inventory tracking system without cloud dependency.',
     technicalHighlights: [
-      'Optimized local state management for instant checkout calculations',
+      'Optimized local state management for quick checkout calculations',
       'Structured modular architecture separating business logic from UI',
-      'Robust receipt formatting and local persistent storage'
+      'Clean receipt formatting and local persistent storage'
     ],
     technologies: ['React', 'Node.js', 'Express', 'Tailwind CSS'],
     status: 'Commercial',
@@ -34,7 +34,7 @@ export const featuredProjectsData: FeaturedProject[] = [
     technicalHighlights: [
       'RESTful API design with secure token authentication and authorization',
       'Comprehensive CRUD operations for item reporting and claiming',
-      'Advanced search and filtering capabilities with image handling'
+      'Search and filtering capabilities with image handling'
     ],
     technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
     status: 'Completed',

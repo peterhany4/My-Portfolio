@@ -36,6 +36,7 @@ export function Header() {
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Open mobile menu"
             aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
             className="p-2.5 rounded-lg border border-borderColor bg-surface text-primary hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-accent"
           >
             <Menu className="w-5 h-5" />
