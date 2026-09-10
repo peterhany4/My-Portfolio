@@ -8,6 +8,7 @@ import { Skills } from './sections/Skills';
 import { FeaturedProjects } from './sections/FeaturedProjects';
 import { AdditionalProjects } from './sections/AdditionalProjects';
 import { Education } from './sections/Education';
+import { Achievements } from './sections/Achievements';
 
 function PortfolioContent() {
   return (
@@ -22,15 +23,7 @@ function PortfolioContent() {
         <FeaturedProjects />
         <AdditionalProjects />
         <Education />
-
-        {/* Achievements Section */}
-        <section id="achievements" className="space-y-4">
-          <h2 className="text-2xl font-bold tracking-tight">Achievements & Recognition</h2>
-          <div className="p-6 rounded-xl border border-borderColor bg-surface space-y-2">
-            <h3 className="font-semibold text-base">DeepX Hackathon & Professional Training</h3>
-            <p className="text-sm text-secondary">Demonstrated engineering excellence and active problem-solving capabilities.</p>
-          </div>
-        </section>
+        <Achievements />
 
         {/* Contact Section */}
         <section id="contact" className="space-y-4">
