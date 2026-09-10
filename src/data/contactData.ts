@@ -9,5 +9,5 @@ export const contactData = {
   subheading: "I'm currently exploring new opportunities, collaborations, and engineering discussions. Feel free to reach out!",
   email: "peterhany@example.com",
   github: "https://github.com/peterhany4",
-  linkedin: "https://linkedin.com",
+  linkedin: "https://www.linkedin.com/in/peterhany",
 };

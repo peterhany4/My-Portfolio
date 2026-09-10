@@ -11,6 +11,6 @@ export const heroData = {
   actions: [
     { label: "View Projects", href: "#projects", isPrimary: true },
     { label: "GitHub", href: "https://github.com/peterhany4" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/peterhany" },
   ]
 };
