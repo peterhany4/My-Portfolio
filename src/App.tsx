@@ -1,10 +1,11 @@
-import { projectsData, skillsData } from './data/portfolioData';
+import { projectsData } from './data/portfolioData';
 import { ThemeProvider } from './hooks/useTheme';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Hero } from './sections/Hero';
 import { About } from './sections/About';
 import { CurrentFocus } from './sections/CurrentFocus';
+import { Skills } from './sections/Skills';
 
 function PortfolioContent() {
   return (
@@ -15,23 +16,7 @@ function PortfolioContent() {
         <Hero />
         <About />
         <CurrentFocus />
-
-        {/* Skills Section */}
-        <section id="skills" className="space-y-6">
-          <h2 className="text-2xl font-bold tracking-tight">Skills & Capabilities</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl border border-borderColor bg-surface">
-              <h3 className="font-semibold text-base mb-3">Skill Categories ({skillsData.length})</h3>
-              <div className="flex flex-wrap gap-2">
-                {skillsData.map(cat => (
-                  <span key={cat.category} className="text-xs px-2.5 py-1 rounded-md border border-borderColor bg-background font-medium">
-                    {cat.category} ({cat.skills.length})
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        <Skills />
 
         {/* Featured Projects Section */}
         <section id="projects" className="space-y-6">
